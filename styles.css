@@ -31,7 +31,6 @@ a h3.heading-primary--sub {
     color: rgb(87, 84, 84);
     text-align: center;
     text-decoration: none;
-    border: white solid 1px;
     border-radius: 10rem;
     width: 30rem;
     position: relative;
@@ -43,7 +42,27 @@ a:link,
 a:visited {
     text-decoration: none;
 }
-a:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+.heading-primary--sub:hover {
+    transform: translateY(.4rem);
+    box-shadow: 2 2rem 4rem, rgb(208, 250, 225);
+    color: #000;
 }
+
+.heading-primary--sub:hover::after {
+    transform: scaleX(1) scaleY(1.4);
+    box-shadow: 2 3rem 4rem, rgb(208, 250, 225);
+    opacity: 0;
+}
+
+.container__phone {
+    padding: 5rem 35rem;
+    
+}
+
+.phone--vid {
+    display: inline-block;
+    height: 100%;
+    outline: none !important;
+}
+
+
