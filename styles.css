@@ -1,0 +1,49 @@
+/* //browser reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #000;
+    font: 62.5%
+}
+
+.header {
+   padding: 3rem;
+   line-height: 3; 
+}
+
+.header-primary--main, h3.heading-primary--sub {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2;
+}
+
+.header-primary--main {
+    font-size: 3.5rem;
+    color: #eee;
+}
+
+a h3.heading-primary--sub {
+    background-color:rgb(157, 243, 193);
+    color: rgb(87, 84, 84);
+    text-align: center;
+    text-decoration: none;
+    border: white solid 1px;
+    border-radius: 10rem;
+    width: 30rem;
+    position: relative;
+    top: 0;
+    left: 35rem;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+}
