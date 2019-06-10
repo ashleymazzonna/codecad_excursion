@@ -15,15 +15,16 @@ html {
    line-height: 3; 
 }
 
-.header-primary--main, h3.heading-primary--sub {
+.header-primary--main, h3.heading-primary--sub, .camp-header {
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
     letter-spacing: 2;
 }
 
-.header-primary--main {
+.header-primary--main, .camp-header {
     font-size: 3.5rem;
-    color: #eee;
+    color: rgb(199, 192, 192);
 }
 
 a h3.heading-primary--sub {
@@ -31,11 +32,12 @@ a h3.heading-primary--sub {
     color: rgb(87, 84, 84);
     text-align: center;
     text-decoration: none;
+    margin: .5rem auto;
     border-radius: 10rem;
     width: 30rem;
-    position: relative;
+    /* position: absolute;
     top: 0;
-    left: 35rem;
+    left: 35rem; */
 }
 
 a:link,
@@ -44,25 +46,34 @@ a:visited {
 }
 .heading-primary--sub:hover {
     transform: translateY(.4rem);
-    box-shadow: 2 2rem 4rem, rgb(208, 250, 225);
+    box-shadow: 2 2rem 4rem, rgb(170, 250, 202);
     color: #000;
 }
 
 .heading-primary--sub:hover::after {
     transform: scaleX(1) scaleY(1.4);
-    box-shadow: 2 3rem 4rem, rgb(208, 250, 225);
+    box-shadow: 2 3rem 4rem, rgb(179, 247, 206);
     opacity: 0;
 }
 
-.container__phone {
-    padding: 5rem 35rem;
+.container__phone { 
+    align-content: center;
     
 }
 
 .phone--vid {
     display: inline-block;
     height: 100%;
-    outline: none !important;
+}
+
+h2.camp-header--sub {
+    color: rgb(124, 121, 121); 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 1rem;
+    margin: .5rem auto;
+    padding: .5rem auto;
 }
 
 
