@@ -10,9 +10,9 @@ html {
     font: 62.5%
 }
 
-.header {
-   padding: 3rem;
-   line-height: 3; 
+.header, .container__phone, .camp-container {
+   padding: .2rem;
+   position: relative;
 }
 
 .header-primary--main, h3.heading-primary--sub, .camp-header {
@@ -20,6 +20,7 @@ html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal;
     letter-spacing: 2;
+    line-height: 2.5;
 }
 
 .header-primary--main, .camp-header {
@@ -28,52 +29,55 @@ html {
 }
 
 a h3.heading-primary--sub {
-    background-color:rgb(157, 243, 193);
+     background-color:rgb(157, 243, 193); 
     color: rgb(87, 84, 84);
     text-align: center;
     text-decoration: none;
-    margin: .5rem auto;
-    border-radius: 10rem;
-    width: 30rem;
-    /* position: absolute;
-    top: 0;
-    left: 35rem; */
+     border-radius: 5rem; 
+    width: 24rem;
+    font-size: 1rem;
+    position: absolute;
+    margin: 1rem 0 2rem 0;
+    top: 7rem;
+    left: 35rem;
 }
 
 a:link,
-a:visited {
-    text-decoration: none;
-}
+a:visited {text-decoration: none;}
 .heading-primary--sub:hover {
     transform: translateY(.4rem);
     box-shadow: 2 2rem 4rem, rgb(170, 250, 202);
     color: #000;
+    z-index: 3;
 }
 
 .heading-primary--sub:hover::after {
-    transform: scaleX(1) scaleY(1.4);
+    transform: scaleX(1) scaleY(2);
     box-shadow: 2 3rem 4rem, rgb(179, 247, 206);
     opacity: 0;
 }
 
-.container__phone { 
-    align-content: center;
-    
+.container__phone {
+    margin: 1rem 1rem;
 }
 
 .phone--vid {
     display: inline-block;
-    height: 100%;
+    position: relative;
+    top: 3rem;
+    left: 33rem;
 }
 
 h2.camp-header--sub {
-    color: rgb(124, 121, 121); 
+    color: rgb(124, 121, 121);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal;
     text-align: center;
     font-size: 1rem;
-    margin: .5rem auto;
+    margin: 0 auto;
     padding: .5rem auto;
 }
+
+
 
 
