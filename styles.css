@@ -10,7 +10,7 @@ html {
     font: 62.5%
 }
 
-.header, .container__phone, .camp-container {
+.header, .container__phone, .container__camp {
    padding: .2rem;
    position: relative;
 }
@@ -57,7 +57,7 @@ a:visited {text-decoration: none;}
     opacity: 0;
 }
 
-.container__phone {
+.container__phone, .container__camp {
     margin: 1rem 1rem;
 }
 
@@ -68,16 +68,36 @@ a:visited {text-decoration: none;}
     left: 33rem;
 }
 
+h1.camp-header {font-weight: 300;}
+
 h2.camp-header--sub {
     color: rgb(124, 121, 121);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin: 0 auto;
     padding: .5rem auto;
 }
 
+.camp--img {
+    display: inline-block;
+    position: relative;
+    top: 3rem;
+    left: 17rem;
+}
 
 
 
+ 
+
+
+/* @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+    .header-primary--main, h3.heading-primary--sub, .camp-header  {
+        line-height: 0;
+    }
+} */
